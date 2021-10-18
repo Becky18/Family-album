@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>FAMILY ALBUM</title>
+</head>
+<body>
+  <h4>FAMILY ALBUM </h4>
+<img id="album" src="https://i.pinimg.com/originals/e7/1b/84/e71b84e9383436538fc2c2ee7ec1a00f.jpg">
+<h2 id="names">Family Album</h2>
+ <div>
+        <button type="button" onclick="nextslide()"> Move  </button>
+ </div>
+ <script>
+ var images = [
+ "https://i.pinimg.com/originals/e7/1b/84/e71b84e9383436538fc2c2ee7ec1a00f.jpg",
+ "https://static.wikia.nocookie.net/theloudhouse/images/5/58/Rita_Loud_vector_image.png/revision/latest?cb=20170110104744",
+ "https://i.pinimg.com/originals/68/66/d5/6866d510bec98b52be2e5f911efc800a.png",
+ "https://static.wikia.nocookie.net/antagonists/images/e/e8/The_Loud_House_Lynn_Nickelodeon.webp/revision/latest?cb=20210706210438",
+ "https://s3-projecthttps://www.vhv.rs/dpng/d/166-1664659_luna-loud-skull-t-shirt-luna-loud-house.pngsassets.whjr.online/Monkey_05.png",
+
+ ];
+ var names=["Family Album"
+"Mother",
+"Father" ,
+"Younger Sister",
+"Older sister"
+];   
+
+ 
+ var i = 0;
+ function nextslide() { 
+    document.getElementById("names").innerHTML=names[i] 
+  document.getElementById("album").src=images[i]
+   if(i==4){i=1}
+   i++
+    
+ }
+
+ </script>
+</body>
+</html>
